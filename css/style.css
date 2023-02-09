@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700,800,900&display=swap&subset=cyrillic-ext");
+
+@font-face {
+	font-family: "HelveticaNeueCyr";
+	src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+		url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+body {
+	line-height: 1;
+	background-color: rgba(128, 128, 128, 0.342);
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* ______________________________________________________ */
+
+.list {
+	padding: 50px;
+}
+.listcontainer {
+	max-width: 1034px;
+	margin: auto;
+}
+.listul {
+max-width: 450px;
+}
+.listul li {
+display: inline-block;
+color: blueviolet;
+	font-family: "roboto";
+	font-size: 30px;
+	padding-left: 30px;
+}
+.listul li:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+.listul li::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: blueviolet;
+	display: inline-block;
+	vertical-align: top;
+	margin: 4px 10px 0px -30px;
+	border-radius: 50%;
+}
+.listul li:hover {
+	color: deeppink;
+border: 3px solid deeppink;
+box-shadow: 10px 10px 30px deeppink;
+}
+.listul li:hover::before {
+	background-color: deeppink;
+
+}
+/* ________________________________________________________________ */
+
+.promise {
+	padding: 50px 0px;
+}
+.promisecontainer {
+	max-width: 1034px;
+	margin: auto;
+	font-family: "roboto";
+}
+.promiselogotip {
+	max-width: 215px;
+}
+.promiselogotiplogotip {
+	display: inline-block;
+	font-weight: 700;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: #5D62B5;
+padding-left: 36px;
+margin-bottom: 33px;
+}
+.promiselogotiphidden {
+	display: inline-block;
+		font-weight: 700;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: #5D62B5;
+	margin: 0px 0px 0px -150px;
+opacity: 0;
+visibility: hidden;
+}
+.promiselogotiplogotip::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../img/promise/icon.png') 0 0 no-repeat;
+	margin: 0px 16px -2px -36px;
+}
+.promiselogotip:hover .promiselogotiplogotip {
+	opacity: 0;
+	visibility: hidden;
+}
+.promiselogotip:hover .promiselogotiphidden {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.promisetitle {
+	max-width: 600px;
+}
+.promisetitletitle {
+	display: inline-block;
+	font-weight: 900;
+font-size: 36px;
+line-height: 1.17;
+color: #000;
+margin-bottom: 68px;
+}
+.promisetitlehidden {
+		display: inline-block;
+	font-weight: 900;
+font-size: 36px;
+line-height: 1.17;
+color: #000;
+margin: 0px 0px 0px -540px;
+opacity: 0;
+visibility: hidden;
+}
+.promisetitle:hover .promisetitletitle {
+	opacity: 0;
+	visibility: hidden;
+}
+.promisetitle:hover .promisetitlehidden {
+	opacity: 1;
+	visibility: visible;
+}
+
+.promisecontainercontanttitle {
+	font-weight: 900;
+font-size: 19px;
+line-height: 1.37;
+color: #F2726F;
+margin-bottom: 20px;
+}
+.promisecontainercontanttext {
+	font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.15px;
+color: #4B4B4B;
+}
+.promisecontainercontant1,
+.promisecontainercontant2,
+.promisecontainercontant3 {
+	display: inline-block;
+	max-width: 324px;
+	padding-left: 86px;;
+}
+.t:not(:last-child) {
+	margin-right: 24px;
+}
+.promisecontainercontant1::before {
+	content: "";
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url('../img/promise/01.png') 0 0 no-repeat;
+	margin: 0px 23px -65px -86px;
+}
+.promisecontainercontant2::before {
+	content: "";
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url('../img/promise/02.png') 0 0 no-repeat;
+	margin: 0px 23px -65px -86px;
+}
+.promisecontainercontant3::before {
+	content: "";
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url('../img/promise/03.png') 0 0 no-repeat;
+	margin: 0px 23px -65px -86px;
+}
+.t:hover {
+	border: 2px solid deeppink;
+	box-shadow: 10px 10px 30px deeppink;
+	background-color: deeppink;
+	color: white;
+}
+.t:hover .promisecontainercontanttext {
+	color: white;
+}
+.t:hover .promisecontainercontanttitle {
+	color: white;
+}
+.promisecontainercontant1:hover::before {
+	opacity: 0;
+	visibility: hidden;
+}
+.promisecontainercontant2:hover::before {
+	opacity: 0;
+	visibility: hidden;
+}
+.promisecontainercontant3:hover::before {
+	opacity: 0;
+	visibility: hidden;
+}
+.promisecontainercontant1:hover {
+	padding-right: 86px;
+	text-align: center;
+}
+.promisecontainercontant2:hover {
+	padding-right: 86px;
+	text-align: center;
+}
+.promisecontainercontant3:hover {
+	padding-right: 86px;
+	text-align: center;
+}
+/* ________________________________________________________ */
+
+.choose {
+	padding: 50px 0px;
+}
+.choosecontainer {
+	max-width: 1034px;
+	margin: auto;
+	font-family: "HelveticaNeueCyr";
+}
+.choosecontent {
+	max-width: 255px;
+	padding: 24px 24px 60px 24px;
+	background: #252525;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+border-radius: 6px;
+}
+.choosetitle {
+	font-weight: 400;
+font-size: 22px;
+line-height: 1.18;
+letter-spacing: -0.275px;
+text-transform: capitalize;
+color: #FFF;
+margin-bottom: 24px;
+}
+.choosetext {
+	font-weight: 400;
+font-size: 13px;
+line-height: 1.38;
+letter-spacing: -0.1625px;
+color: rgba(255, 255, 255, 0.5);
+}
+.choosetitle::after {
+	content: "";
+	display: block;
+	max-width: 56px;
+	height: 2px;
+	background-color: #34C759;
+	margin-top: 10px ;
+}
+.choosecontent:hover {
+	background: url('../img/d.png') 0 50% / cover no-repeat;
+}
+.choosecontent:hover .choosetitle {
+	opacity: 0;
+	visibility: hidden;
+}
+.choosecontent:hover .choosetext {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+
+
+
+
